@@ -1,5 +1,5 @@
 function submit()
-  addpath('/Users/sivaprasad/Downloads/machine-learning-ex1/ex1/lib');
+  addpath('./lib');
 
   conf.assignmentSlug = 'linear-regression';
   conf.itemName = 'Linear Regression with Multiple Variables';

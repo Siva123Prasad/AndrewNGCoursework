@@ -7,14 +7,15 @@ function J = computeCost(X, y, theta)
 m = length(y); % number of training examples
 
 % You need to return the following variables correctly 
+J = 0;
 
 % ====================== YOUR CODE HERE ======================
 % Instructions: Compute the cost of a particular choice of theta
 %               You should set J to the cost.
 
-predicted = X * theta;
-sqrError = (predicted-y).^2;
-J = 1/(2*m)* sum(sqrError);
+Deviations = X * theta - y;
+
+J = 1/(2*m)*sum(Deviations.^2);
 
 
 % =========================================================================
